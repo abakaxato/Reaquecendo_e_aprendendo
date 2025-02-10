@@ -10,22 +10,26 @@ public class Lutadores {
 
     public void apresentar(){
         System.out.println("boa tarde, boa noite e bom dia a todos presentes, quem voz fala é o apresentador abaka");
-        System.out.println("aqui diante de todos temos os lutadores " + this.nome + "e " + this.nome);
+        System.out.println("aqui diante de todos temos o estimado lutador " + this.getNome()+ ", peso "+ getCategoria());
+        System.out.println("pesando exatamente " + this.getPeso() +"Kg"+" e vindo diretamente de " + this.getNacionalidade());
+        System.out.println("com "+this.getIdade()+ " aninhos e " + getAltura() + " de altura");
+        System.out.println("\nGanhou " + this.getVitorias()+"x\nperdeu "+getDerrotas()+"x\natualmente conta com "+getEmpates()+" Empates");
 
     }
     public void status(){
+        System.out.println(this.getNome()+" é um peso "+ getCategoria()+"\n"+getVitorias()+" Vitorias\n"+getDerrotas()+" Derrotas\n"+getEmpates()+" Empates");
 
     }
     public void ganharLuta(){
-
+        this.setVitorias(+1);
     }
 
     public void perderLuta(){
-
+        this.setDerrotas(+1);
     }
 
     public void empatarLuta(){
-
+        this.setEmpates(+1);
     }
 
 
@@ -52,8 +56,21 @@ public class Lutadores {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    private void setCategoria(String categoria) {
+        if (this.getPeso()<=52){
+             this.categoria = ("invalido, Muito maguinho");
+           }else if (this.getPeso()<=70){
+             this.categoria = ("Leve");
+           } else if (this.getPeso()<80) {
+            this.categoria = ("Média");
+           } else if (this.getPeso()<=120) {
+            this.categoria = ("Pesado");
+           }else if (this.getPeso()>120){
+            this.categoria = ("invalido, muito gordinho");
+           }else{this.categoria="invalido";
+
+        }
+
     }
 
     public Integer getIdade() {
@@ -86,6 +103,7 @@ public class Lutadores {
 
     public void setPeso(Float peso) {
         this.peso = peso;
+        this.setCategoria(null);
     }
 
     public Integer getDerrotas() {
@@ -104,9 +122,13 @@ public class Lutadores {
         this.empates = empates;
     }
 
-    public Lutadores(String nom, String cat, int ida, float alt, float pes, int vit, int der, int emp) {
+
+
+    //Constructor
+
+    public Lutadores(String nom, String nac, int ida, float alt, float pes, int vit, int der, int emp) {
         this.setNome(nom);
-        this.setNacionalidade(cat);
+        this.setNacionalidade(nac);
         this.setIdade(ida);
         this.setAltura(alt);
         this.setPeso(pes);
