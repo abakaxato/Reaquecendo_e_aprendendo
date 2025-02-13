@@ -7,7 +7,7 @@ public class Luta {
     private int rouds;
     private boolean aprovada;
 
-    public void marcarLuta(Lutadores l1,l2){
+    public void marcarLuta(Lutadores l1,Lutadores l2){
 
         //regras da luta
         if (l1.getCategoria()!=l2.getCategoria()){
@@ -25,17 +25,28 @@ public class Luta {
     public void lutar(){
         if(aprovada == true){
             desafiado.apresentar();
+
             desafiante.apresentar();
-            Random vencedor = new Random(2);
 
+            Random v = new Random();
+            int vencedor = v.nextInt(3);   //conta a partir do 0
 
-
-
-
-
-
-
-
+                switch (vencedor){
+                    case 1:
+                        System.out.println("o vencedor foi o desafiante" + desafiante.getNome()) ;
+                        desafiante.ganharLuta();
+                        desafiado.perderLuta();
+                        break;
+                    case 2:
+                        System.out.println("o vencedor foi o desafiado" + desafiado.getNome());
+                        desafiante.perderLuta();
+                        desafiado.ganharLuta();
+                        break;
+                    case 0:
+                        System.out.println("a luta terminou em epate");
+                        desafiado.empatarLuta();
+                        desafiante.empatarLuta();
+                }
 
         }else{
             System.out.println("Luta não aprovada");
@@ -56,4 +67,5 @@ public class Luta {
     public Lutadores getDesafiante(){
         return this.desafiante;
     }
+
 }

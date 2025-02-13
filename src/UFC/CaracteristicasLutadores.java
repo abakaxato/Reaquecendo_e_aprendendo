@@ -13,7 +13,12 @@ public class CaracteristicasLutadores {
             l[5] = new Lutadores("Nerdaard" , "EUA"     , 30, 1.81f, 105.7f,12, 2, 4);
             l[6] = new Lutadores("mamae", "groelandia", 90, 2.00f, 250.0f, 40, 0, 1);
 
-            l[5].apresentar();
+            Luta luta = new Luta();
+
+            luta.marcarLuta(l[3],l[2]);
+
+            luta.lutar();
+
         }
 
     }
