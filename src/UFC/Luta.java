@@ -57,17 +57,21 @@ public class Luta {
     }
 
     public void setDesafiado(Lutadores dd){
+
         this.desafiado = dd;
     }
     public Lutadores getDesafiado(){
+
         return this.desafiado;
     }
 
     public void setDesafiante(Lutadores df){
+
         this.desafiante = df;
     }
 
     public Lutadores getDesafiante(){
+
         return this.desafiante;
     }
 
