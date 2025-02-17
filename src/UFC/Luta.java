@@ -1,21 +1,24 @@
 package UFC;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class Luta {
     private Lutadores desafiado, desafiante;
     private int rouds;
-    private boolean aprovada;
+    private boolean aprovada = true;
 
     public void marcarLuta(Lutadores l1,Lutadores l2){
 
-        //regras da luta
-        if (l1.getCategoria()!=l2.getCategoria()){
+        if (!Objects.equals(l1.getCategoria(), l2.getCategoria())){
             System.out.println("Categorias incompativeis para a realização da luta");
-        } else if (l1.getNome()==l2.getNome()) {
+            System.exit(0);
+        } else if (Objects.equals(l1.getNome(), l2.getNome())) {
             System.out.println("Lutador cadastrado como desafiante e desafiado");
-        }else if (aprovada == false){
+            System.exit(0);
+        }else if (!aprovada){
             System.out.println("Luta não aprovada");
+            System.exit(0);
         }else {
             desafiado = l1;
             desafiante = l2;
@@ -23,7 +26,7 @@ public class Luta {
     }
 
     public void lutar(){
-        if(aprovada == true){
+        if(aprovada){
             desafiado.apresentar();
 
             desafiante.apresentar();
@@ -33,17 +36,17 @@ public class Luta {
 
                 switch (vencedor){
                     case 1:
-                        System.out.println("o vencedor foi o desafiante" + desafiante.getNome()) ;
+                        System.out.println("o vencedor foi o desafiante " + desafiante.getNome()) ;
                         desafiante.ganharLuta();
                         desafiado.perderLuta();
                         break;
                     case 2:
-                        System.out.println("o vencedor foi o desafiado" + desafiado.getNome());
+                        System.out.println("o vencedor foi o desafiado " + desafiado.getNome());
                         desafiante.perderLuta();
                         desafiado.ganharLuta();
                         break;
                     case 0:
-                        System.out.println("a luta terminou em epate");
+                        System.out.println("a luta terminou em empate");
                         desafiado.empatarLuta();
                         desafiante.empatarLuta();
                 }
