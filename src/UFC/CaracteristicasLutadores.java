@@ -1,8 +1,11 @@
 package UFC;
 
+import java.util.Random;
+
 public class CaracteristicasLutadores {
 
         public static void main (String [] args) {
+            int dd,dt;
 
             Lutadores[] l = new Lutadores[7];
             l[0] = new Lutadores("Pretty Boy", "França", 31, 1.75f, 68.9f, 11, 2, 1);
@@ -14,8 +17,11 @@ public class CaracteristicasLutadores {
             l[6] = new Lutadores("mamae", "groelandia", 90, 2.00f, 250.0f, 40, 0, 1);
 
             Luta luta = new Luta();
+            Random i = new Random();
+            dd = i.nextInt(7);
+            dt= i.nextInt(7);
 
-            luta.marcarLuta(l[3],l[2]);
+            luta.marcarLuta(l[dd],l[dt]);
 
             luta.lutar();
 
