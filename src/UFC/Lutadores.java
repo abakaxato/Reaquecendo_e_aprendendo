@@ -6,7 +6,7 @@ public class Lutadores {
     private Float altura, peso;
 
 
-    //Metodos
+    //Métodos especiais
 
     public void apresentar(){
         System.out.println("boa tarde, boa noite e bom dia a todos presentes, quem voz fala é o apresentador abaka");

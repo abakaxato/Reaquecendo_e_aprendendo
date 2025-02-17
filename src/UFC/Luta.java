@@ -8,7 +8,14 @@ public class Luta {
     private int rouds;
     private boolean aprovada = true;
 
+    // Métodos especiais
+
     public void marcarLuta(Lutadores l1,Lutadores l2){
+
+        // o uso de equals é recomendado para comparação de objetos ou classes que no caso abaixo são String
+
+        /*ao colocar "!" anteriormente a uma condição ou Boolean, é validado se o contrario daquela condição acontece
+         No caso atual utilizei no "!aprovada" e também poderia ter utilizado no teste de equals*/
 
         if (!Objects.equals(l1.getCategoria(), l2.getCategoria())){
             System.out.println("Categorias incompativeis para a realização da luta");
@@ -30,6 +37,9 @@ public class Luta {
             desafiado.apresentar();
 
             desafiante.apresentar();
+
+            /*  O vencedor é decidido de forma aleátoria com uma varíavel do tipo Random, Classe vinda do pacote de
+            utilidades do java "Java.util.Random"  */
 
             Random v = new Random();
             int vencedor = v.nextInt(3);   //conta a partir do 0
@@ -60,6 +70,7 @@ public class Luta {
 
         this.desafiado = dd;
     }
+
     public Lutadores getDesafiado(){
 
         return this.desafiado;

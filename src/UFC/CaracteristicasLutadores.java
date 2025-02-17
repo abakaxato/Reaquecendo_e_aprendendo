@@ -16,7 +16,10 @@ public class CaracteristicasLutadores {
             l[5] = new Lutadores("Nerdaard" , "EUA"     , 30, 1.81f, 105.7f,12, 2, 4);
             l[6] = new Lutadores("mamae", "groelandia", 90, 2.00f, 250.0f, 40, 0, 1);
 
+            //Instaciando a classe luta e criando a varíavel de lutador aleátorio
+
             Luta luta = new Luta();
+
             Random i = new Random();
             dd = i.nextInt(7);
             dt= i.nextInt(7);
