@@ -13,7 +13,7 @@ public class Lutadores {
         System.out.println("aqui diante de todos temos o estimado lutador " + this.getNome()+ ", peso "+ getCategoria());
         System.out.println("pesando exatamente " + this.getPeso() +"Kg"+" e vindo diretamente de " + this.getNacionalidade());
         System.out.println("com "+this.getIdade()+ " aninhos e " + getAltura() + " de altura");
-        System.out.println("\nGanhou " + this.getVitorias()+"x\nperdeu "+getDerrotas()+"x\natualmente conta com "+getEmpates()+" Empates");
+        System.out.println("\nGanhou " + this.getVitorias()+"x\nperdeu "+getDerrotas()+"x\natualmente conta com "+getEmpates()+" Empates\n");
 
     }
     public void status(){
