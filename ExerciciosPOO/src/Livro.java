@@ -10,14 +10,6 @@ public class Livro {
 
     }
 
-
-
-
-
-
-
-
-
     //Getters and Setters
 
     public String getTitulo() {
