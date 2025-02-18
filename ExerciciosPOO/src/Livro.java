@@ -1,13 +1,21 @@
-public class Livro {
+public class Livro implements Publicacao{
     private String titulo, autor;
     private int totPag, pagAtual;
-    private boolean aberto = false;
+    private boolean aberto;
     private Pessoa leitor;
 
     //Métodos
 
-    public void detalhes (){
 
+    public String Detalhes() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", totPag=" + totPag +
+                ", pagAtual=" + pagAtual +
+                ", aberto=" + aberto +
+                ", leitor=" + leitor +
+                '}';
     }
 
     //Getters and Setters
@@ -58,5 +66,42 @@ public class Livro {
 
     public void setLeitor(Pessoa leitor) {
         this.leitor = leitor;
+    }
+
+    @Override
+    public void abrir() {
+        this.aberto = true;
+    }
+
+    @Override
+    public void fechar() {
+        this.aberto = false;
+    }
+
+    @Override
+    public void folhear( int p) {
+        this.pagAtual = p;
+    }
+
+    @Override
+    public void avancarPag() {
+        this.pagAtual = + 1;
+    }
+
+    @Override
+    public void voltarPag() {
+        this.pagAtual = - 1;
+    }
+
+    //Construtor
+
+
+    public Livro(String titulo, String autor, int totPag, Pessoa leitor) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.totPag = totPag;
+        this.leitor = leitor;
+        this.pagAtual = 0;
+        this.aberto = false;
     }
 }

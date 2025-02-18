@@ -5,6 +5,7 @@ public class Pessoa {
     //Métodos
 
     public void fazerAniver(){
+        this.idade = + 1;
     }
 
     // Contrutor
