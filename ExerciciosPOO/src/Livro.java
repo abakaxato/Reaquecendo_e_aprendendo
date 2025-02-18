@@ -9,12 +9,12 @@ public class Livro implements Publicacao{
 
     public String Detalhes() {
         return "Livro{" +
-                "titulo='" + titulo + '\'' +
-                ", autor='" + autor + '\'' +
-                ", totPag=" + totPag +
-                ", pagAtual=" + pagAtual +
-                ", aberto=" + aberto +
-                ", leitor=" + leitor +
+                "\ntitulo='" + titulo +
+                ",\nautor='" + autor +
+                ", \ntotPag=" + totPag +
+                ", \npagAtual=" + pagAtual +
+                ", \naberto=" + aberto +
+                ", \nleitor=" + leitor +
                 '}';
     }
 
