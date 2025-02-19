@@ -8,14 +8,13 @@ public class Livro implements Publicacao{
 
 
     public String Detalhes() {
-        return "Livro{" +
-                "\ntitulo='" + titulo +
-                ",\nautor='" + autor +
-                ", \ntotPag=" + totPag +
-                ", \npagAtual=" + pagAtual +
-                ", \naberto=" + aberto +
-                ", \nleitor=" + leitor +
-                '}';
+        return "Livro : " +
+                "\ntitulo = " + titulo +
+                ",\nautor = " + autor +
+                ", \ntotal de paginas = " + totPag +
+                ", \nPagina Atual = " + pagAtual +
+                ", \naberto = " + aberto +
+                ", \nleitor = " + leitor.getNome();
     }
 
     //Getters and Setters
