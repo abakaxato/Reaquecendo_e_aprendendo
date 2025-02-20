@@ -12,6 +12,10 @@ public class MainHeranca {
         p3.apresentar();
         p4.apresentar();
 
+        System.out.println("\n salario da ana = " + p3.getSalario() + "\n");
+        System.out.println("tome um aumento minha filha ");
+        p3.receberAume(50);
+        System.out.println(p3.getSalario());
 
     }
 }
