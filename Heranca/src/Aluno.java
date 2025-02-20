@@ -5,6 +5,10 @@ public class Aluno extends Pessoa {
     private int matricula;
     private String curso;
 
+    public Aluno(String nom, String sex, int ida) {
+        super(nom, sex, ida);
+    }
+
     // Métodos
 
     public void cancelarMatri(){

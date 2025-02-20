@@ -4,6 +4,10 @@ public class Professor extends Pessoa{
     private String especialidade;
     private float salario;
 
+    public Professor(String nom, String sex, int ida) {
+        super(nom, sex, ida);
+    }
+
     // Métodos
 
     public void receberAume(int a){

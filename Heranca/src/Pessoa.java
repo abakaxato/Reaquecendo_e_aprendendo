@@ -36,4 +36,12 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    // Contrutor
+    public Pessoa (String nom, String sex,int ida){
+        this.setNome(nom);
+        this.setSexo(sex);
+        this.setIdade(ida);
+
+    }
 }

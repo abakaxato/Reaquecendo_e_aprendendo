@@ -5,6 +5,10 @@ public class Funcionario extends Pessoa{
     private String setor;
     private boolean trabalhando = false;
 
+    public Funcionario(String nom, String sex, int ida) {
+        super(nom, sex, ida);
+    }
+
     // Métodos
     public void mudartraba(String s){
         if (trabalhando){
