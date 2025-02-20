@@ -4,10 +4,6 @@ public class Professor extends Pessoa{
     private String especialidade;
     private float salario;
 
-    public Professor(String nom, String sex, int ida) {
-        super(nom, sex, ida);
-    }
-
     // Métodos
 
     public void receberAume(int a){
@@ -31,4 +27,17 @@ public class Professor extends Pessoa{
     public void setSalario(float salario) {
         this.salario = salario;
     }
+
+    // Contrutor
+
+    // Aqui eu consegui ir alem da aula e colocar para criar um construtor que eu possa usar parte da superclasse
+    // o "super" representa a parte que os atributos da classe atual vão ser usados nos métodos da superclasse
+
+    public Professor(String nom, String sex, int ida, String espe,float sal) {
+        super(nom, sex, ida);
+        this.setSalario(sal);
+        this.setEspecialidade(espe);
+    }
+
+
 }

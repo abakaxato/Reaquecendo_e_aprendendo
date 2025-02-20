@@ -11,6 +11,10 @@ public class Pessoa {
         this.setIdade(+1);
     }
 
+    public void apresentar() {
+        System.out.println( "\nA Pessoa " + nome + ", do sexo " + sexo + ", tem " + idade + " anos de idade");
+    }
+
     //Getters and Setters
 
     public String getNome() {
@@ -42,6 +46,5 @@ public class Pessoa {
         this.setNome(nom);
         this.setSexo(sex);
         this.setIdade(ida);
-
     }
 }
