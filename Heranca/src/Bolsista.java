@@ -28,7 +28,8 @@ public class Bolsista extends Aluno{
 
     //Construtor
 
-    public Bolsista(String nom, String sex, int ida, int mat, String curs) {
+    public Bolsista(String nom, String sex, int ida, int mat, String curs,int bo) {
         super(nom, sex, ida, mat, curs);
+        this.setBolsa(bo);
     }
 }
