@@ -7,6 +7,10 @@ public class Aluno extends Pessoa {
 
     // Métodos
 
+    public void pagarMensalidade(){
+        System.out.println("A mensalidade do aluno esta paga");
+    }
+
     public void cancelarMatri(){
         this.matricula = 0;
         this.setCurso("Curso Cancelado ou inexistente");
