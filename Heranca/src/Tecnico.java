@@ -9,10 +9,20 @@ public class Tecnico extends Aluno{
         System.out.println("O aluno tecnico praticou");
     }
 
+    //Getters and Setters
 
-    //Construtor
+    public int getRegistroProf() {
+        return registroProf;
+    }
 
-    public Tecnico(String nom, String sex, int ida, int mat, String curs) {
+    public void setRegistroProf(int registroProf) {
+        this.registroProf = registroProf;
+    }
+
+//Construtor
+
+    public Tecnico(String nom, String sex, int ida, int mat, String curs, int reg) {
         super(nom, sex, ida, mat, curs);
+        this.setRegistroProf(reg);
     }
 }
