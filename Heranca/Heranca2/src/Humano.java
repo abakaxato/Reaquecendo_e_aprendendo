@@ -6,12 +6,10 @@ public abstract class Humano {
     private int idade;
 
     //Métodos
-    public final void fazerAniv(){
+    public final void fazerAniv() {
         this.setIdade(+1);
 
     }
-
-
 
     // Getters and Setters
 
