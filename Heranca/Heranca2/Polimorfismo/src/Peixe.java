@@ -20,12 +20,12 @@ public class Peixe extends Animal{
     //Métodos da Super Classe (Obrigatórios e obrigatorios sobrepor)
     @Override
     public void locomover() {
-
+        System.out.println("Nadando");
     }
 
     @Override
     public void alimentar() {
-
+        System.out.println("Sugando");
     }
 
     @Override

@@ -15,12 +15,12 @@ public class Reptil extends Animal{
     //Métodos da Super Classe (Obrigatórios e obrigatorios sobrepor)
     @Override
     public void locomover() {
-
+        System.out.println("Arrastando");
     }
 
     @Override
     public void alimentar() {
-
+        System.out.println("Rasgando");
     }
 
     @Override

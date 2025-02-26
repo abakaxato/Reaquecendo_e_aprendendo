@@ -15,12 +15,12 @@ public class Mamiferos extends Animal{
     //Métodos da Super Classe (Obrigatórios e obrigatorios sobrepor)
     @Override
     public void locomover() {
-
+        System.out.println("Correndo");
     }
 
     @Override
     public void alimentar() {
-
+        System.out.println("Mamando");
     }
 
     @Override

@@ -19,12 +19,12 @@ public class Aves extends Animal{
     //Métodos da Super Classe (Obrigatórios e obrigatorios sobrepor)
     @Override
     public void locomover() {
-
+        System.out.println("voando");
     }
 
     @Override
     public void alimentar() {
-
+        System.out.println("Ingerindo");
     }
 
     @Override
