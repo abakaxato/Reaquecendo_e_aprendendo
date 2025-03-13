@@ -28,6 +28,15 @@ public class Reptil extends Animal{
         return " siiii";
     }
 
+    public String toString() {
+        return "Reptil{" +
+                "corEscama='" + corEscama + '\'' +
+                ", idade=" + idade +
+                ", membros=" + membros +
+                ", peso=" + peso +
+                '}';
+    }
+
     //Construtor
     public Reptil(int idade, int membros,float peso, String corEscama){
         this.setIdade(idade);
