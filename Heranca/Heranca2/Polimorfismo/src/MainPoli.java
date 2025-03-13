@@ -6,7 +6,9 @@ public class MainPoli {
         Peixe baiacu = new Peixe(1,0,0.5f,"cinza");
         Reptil salamandra = new Reptil(3,5,2.5f,"vermelho");
 
-        System.out.println(salamandra.toString());
+        vaca.locomover();
+        vaca.alimentar();
+        vaca.emitirSom();
         
     }
 }
