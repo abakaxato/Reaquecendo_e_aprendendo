@@ -27,4 +27,16 @@ public class Mamiferos extends Animal{
     public String emitirSom() {
         return " au au ";
     }
+
+    //Construtor
+    public Mamiferos(int idade, int membros,float peso, String corPelo){
+        this.setIdade(idade);
+        this.setMembros(membros);
+        this.setPeso(peso);
+        this.setCorPelo(corPelo);
+
+    }
+
+
+
 }

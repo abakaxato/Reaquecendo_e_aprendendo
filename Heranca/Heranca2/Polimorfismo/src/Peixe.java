@@ -32,4 +32,14 @@ public class Peixe extends Animal{
     public String emitirSom() {
         return "..........";
     }
+
+    //Construtor
+    public Peixe(int idade, int membros,float peso, String corEscama){
+        this.setIdade(idade);
+        this.setMembros(membros);
+        this.setPeso(peso);
+        this.setCorEscama(corEscama);
+
+    }
+
 }

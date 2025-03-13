@@ -31,4 +31,14 @@ public class Aves extends Animal{
     public String emitirSom() {
         return "ara ara ara";
     }
+
+    //Construtor
+    public Aves(int idade, int membros,float peso, String corPena){
+        this.setIdade(idade);
+        this.setMembros(membros);
+        this.setPeso(peso);
+        this.setCorPena(corPena);
+
+    }
+
 }

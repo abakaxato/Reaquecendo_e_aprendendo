@@ -27,4 +27,13 @@ public class Reptil extends Animal{
     public String emitirSom() {
         return " siiii";
     }
+
+    //Construtor
+    public Reptil(int idade, int membros,float peso, String corEscama){
+        this.setIdade(idade);
+        this.setMembros(membros);
+        this.setPeso(peso);
+        this.setCorEscama(corEscama);
+
+    }
 }
