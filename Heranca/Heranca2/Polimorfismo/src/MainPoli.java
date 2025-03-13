@@ -5,10 +5,15 @@ public class MainPoli {
         Mamiferos vaca = new Mamiferos(7,4,200f,"branca");
         Peixe baiacu = new Peixe(1,0,0.5f,"cinza");
         Reptil salamandra = new Reptil(3,5,2.5f,"vermelho");
+        Cachorro lucarelli = new Cachorro(10,5,20f,"Marrom");
+        Canguru jack = new Canguru(50,17,250f,"marrom escuro");
+
 
         vaca.locomover();
         vaca.alimentar();
         vaca.emitirSom();
-        
+
+        lucarelli.abanarRabo();
+
     }
 }
