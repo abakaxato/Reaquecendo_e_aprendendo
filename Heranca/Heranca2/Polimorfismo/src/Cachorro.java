@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Cachorro extends Lobo{
 
 
@@ -9,19 +11,46 @@ public class Cachorro extends Lobo{
 
 
     public void reagir(String frase){
+        if (Objects.equals(frase, "Agradavel")) {
+            System.out.println("abanando o rabo");
+        }else{
+            System.out.println("Rosnando");
+        }
 
     }
 
     public void reagir(int hora ,int min){
-
+        if (hora<12){
+            System.out.println("Abanando o rabo");
+        } else if (hora>=18) {
+            System.out.println("Ignorando");
+        }else{
+            System.out.println("abanando e latindo");
+        }
     }
 
     public void reagir (boolean dono){
-
+        if(dono){
+            abanarRabo();
+        }else{
+            System.out.println("Rosnando");
+        }
     }
 
     public void reagir (int idade, float peso){
-
+        if(idade<5){
+            if (peso<10){
+                abanarRabo();
+            }else{
+                System.out.println("Latindo");
+            }
+        }else{
+            if (peso>10){
+                System.out.println("Rosnando");
+            }else{
+                System.out.println("Ignorando");
+            }
+        }
     }
 
     public void enterrarOsso(){
