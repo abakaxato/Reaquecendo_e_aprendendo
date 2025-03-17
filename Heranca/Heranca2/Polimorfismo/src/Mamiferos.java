@@ -25,7 +25,7 @@ public class Mamiferos extends Animal{
 
     @Override
     public String emitirSom() {
-        return " au au ";
+        return " som de mamifero ";
     }
 
     //Construtor
