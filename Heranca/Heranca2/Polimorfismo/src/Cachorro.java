@@ -37,15 +37,15 @@ public class Cachorro extends Lobo{
         }
     }
 
-    public void reagir (int idade, float peso){
-        if(idade<5){
-            if (peso<10){
+    public void reagir (){
+        if(this.getIdade()<5){
+            if (this.getPeso()<10){
                 abanarRabo();
             }else{
                 System.out.println("Latindo");
             }
         }else{
-            if (peso>10){
+            if (this.getPeso()>10){
                 System.out.println("Rosnando");
             }else{
                 System.out.println("Ignorando");

@@ -8,12 +8,8 @@ public class MainPoli {
         Cachorro lucarelli = new Cachorro(10,5,20f,"Marrom");
         Canguru jack = new Canguru(50,17,250f,"marrom escuro");
 
+        lucarelli.reagir(5,8);
 
-        vaca.locomover();
-        vaca.alimentar();
-        vaca.emitirSom();
-
-        lucarelli.abanarRabo();
 
     }
 }
