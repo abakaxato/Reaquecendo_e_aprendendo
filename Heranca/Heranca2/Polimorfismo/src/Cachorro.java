@@ -7,6 +7,23 @@ public class Cachorro extends Lobo{
         return "au au au";
     }
 
+
+    public void reagir(String frase){
+
+    }
+
+    public void reagir(int hora ,int min){
+
+    }
+
+    public void reagir (boolean dono){
+
+    }
+
+    public void reagir (int idade, float peso){
+
+    }
+
     public void enterrarOsso(){
         System.out.println("osso enterrado");
     }
@@ -14,7 +31,6 @@ public class Cachorro extends Lobo{
     public void abanarRabo(){
         System.out.println("Rabo abanando....");
     }
-
 
     //Construtor
     public Cachorro(int idade, int membros, float peso, String corPelo) {
