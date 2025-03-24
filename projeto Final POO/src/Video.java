@@ -1,4 +1,4 @@
-public class video implements acoesVideo{
+public class Video implements acoesVideo{
 
     //Atributos
 
@@ -22,10 +22,6 @@ public class video implements acoesVideo{
     public void pause() {
 
     }
-
-
-
-
 
     //Getters and Setters
 
@@ -69,5 +65,26 @@ public class video implements acoesVideo{
         this.reproduzindo = reproduzindo;
     }
 
+    //Construtor
 
+    public Video(String titulo) {
+        this.titulo = titulo;
+        this.views = 0;
+        this.curtidas = 0;
+        this.avaliacao = 1;
+        this.reproduzindo = false;
+    }
+
+    //TO String
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "titulo='" + titulo + '\'' +
+                ", views=" + views +
+                ", curtidas=" + curtidas +
+                ", avaliacao=" + avaliacao +
+                ", reproduzindo=" + reproduzindo +
+                '}';
+    }
 }
