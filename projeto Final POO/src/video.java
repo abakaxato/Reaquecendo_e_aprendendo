@@ -2,8 +2,8 @@ public class video implements acoesVideo{
 
     //Atributos
 
-    private String avaliacao,titulo;
-    private int views, curtidas;
+    private String titulo;
+    private int views, curtidas,avaliacao;
     private boolean reproduzindo;
 
     //métodos
@@ -29,11 +29,11 @@ public class video implements acoesVideo{
 
     //Getters and Setters
 
-    public String getAvaliacao() {
+    public int getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvaliacao(String avaliacao) {
+    public void setAvaliacao(int avaliacao) {
         this.avaliacao = avaliacao;
     }
 

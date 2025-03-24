@@ -1,4 +1,4 @@
-public class gafanhoto {
+public class gafanhoto extends Pessoa{
 
     //Atributos
     private boolean login;
