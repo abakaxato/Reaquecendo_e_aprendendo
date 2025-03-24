@@ -45,4 +45,13 @@ public abstract class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    // Construtor
+
+    public Pessoa(String nome, String sexo, int idade) {
+        this.nome = nome;
+        this.sexo = sexo;
+        this.experiencia = 0;
+        this.idade = idade;
+    }
 }

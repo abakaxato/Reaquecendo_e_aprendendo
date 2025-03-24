@@ -1,7 +1,7 @@
 public class gafanhoto extends Pessoa{
 
     //Atributos
-    private boolean login;
+    private String login;
     private int totAssistido;
 
     //Métodos
@@ -12,11 +12,11 @@ public class gafanhoto extends Pessoa{
 
     //Getters and Setters
 
-    public boolean isLogin() {
+    public String isLogin() {
         return login;
     }
 
-    public void setLogin(boolean login) {
+    public void setLogin(String login) {
         this.login = login;
     }
 
@@ -26,5 +26,21 @@ public class gafanhoto extends Pessoa{
 
     public void setTotAssistido(int totAssistido) {
         this.totAssistido = totAssistido;
+    }
+
+    //Construtor
+
+    public gafanhoto(String nome, String sexo, int idade, String login) {
+        super(nome, sexo, idade);
+        this.login = login;
+    }
+
+    //To string
+
+    public void informacoes(){
+        System.out.println(this.getNome() + " faz parte da nossa familia de gafanhotos, tem " +
+        this.getIdade() +" Anos de idade e é " +
+        this.getSexo() + ", Atualmente conta com " +
+        this.getExperiencia()+ " Pontos de experiencia");
     }
 }
