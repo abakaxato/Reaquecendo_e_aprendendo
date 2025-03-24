@@ -6,7 +6,7 @@ public class Main {
         v [1]= new Video("Laços");
         v [2]= new Video("Variaveis");
 
-        v[1].toString();
+        v[1].informacoes();
 
 
 

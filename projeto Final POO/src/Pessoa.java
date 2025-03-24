@@ -1,10 +1,12 @@
-public class Pessoa {
+public abstract class Pessoa {
 
     //Atributos
 
     protected String nome,sexo;
     protected float experiencia;
     protected int idade;
+
+    //Métodos
 
     public void ganharExp(int experiencia){
         this.setExperiencia(experiencia);
