@@ -11,8 +11,9 @@ public class Main {
         p[0] = new gafanhoto("joão","homi",12,"jogao@gmail.com");
         p[1] = new gafanhoto("maria","mule",12,"maquina@gmail.com");
 
-        Visualizacao vi = new Visualizacao(p[0],v[0]);
+        Visualizacao vis = new Visualizacao(p[0],v[0]);
 
+        System.out.println(vis.toString());
 
     }
 

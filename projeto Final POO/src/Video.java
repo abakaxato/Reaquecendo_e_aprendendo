@@ -77,8 +77,11 @@ public class Video implements acoesVideo{
 
     //TO String
 
-    public void informacoes() {
-        System.out.println("\n O Video : " + titulo + "\n tem " + views +" views\n " + curtidas + " curtidas \n " +  avaliacao + " avaliações \n " +
-                " esta reproduzindo ? > " + reproduzindo);
+
+    @Override
+    public String toString() {
+        return "\n O Video : " + titulo + "\n tem " + views +" views\n " + curtidas + " curtidas \n " +  avaliacao + " avaliações \n " +
+                " esta reproduzindo ? > " + reproduzindo;
     }
+
 }

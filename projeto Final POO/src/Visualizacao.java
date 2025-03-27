@@ -42,5 +42,17 @@ public class Visualizacao {
         this.setFilme(filme);
     }
 
+    // To String
+    public void informacao(){
+        System.out.println(espectador+""+filme);
+    }
+
+    @Override
+    public String toString() {
+        return "Visualizacao{" +
+                "espectador=" + espectador +
+                ", filme=" + filme +
+                '}';
+    }
 }
 

@@ -37,10 +37,13 @@ public class gafanhoto extends Pessoa{
 
     //To string
 
-    public void informacoes(){
-        System.out.println(this.getNome() + " faz parte da nossa familia de gafanhotos, tem " +
-        this.getIdade() +" Anos de idade e é " +
-        this.getSexo() + ", Atualmente conta com " +
-        this.getExperiencia()+ " Pontos de experiencia");
+
+    @Override
+    public String toString() {
+        return this.getNome() + " faz parte da nossa familia de gafanhotos, tem " +
+                this.getIdade() +" Anos de idade e é " +
+                this.getSexo() + ", Atualmente conta com " +
+                this.getExperiencia()+ " Pontos de experiencia";
     }
+
 }
