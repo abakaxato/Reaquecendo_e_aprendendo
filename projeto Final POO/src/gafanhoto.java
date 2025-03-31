@@ -43,7 +43,8 @@ public class gafanhoto extends Pessoa{
         return this.getNome() + " faz parte da nossa familia de gafanhotos, tem " +
                 this.getIdade() +" Anos de idade e é " +
                 this.getSexo() + ", Atualmente conta com " +
-                this.getExperiencia()+ " Pontos de experiencia";
+                this.getExperiencia()+ " Pontos de experiencia" +
+                " E já asssistiu " + this.getTotAssistido() + " Videos";
     }
 
 }

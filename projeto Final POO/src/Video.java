@@ -80,7 +80,7 @@ public class Video implements acoesVideo{
 
     @Override
     public String toString() {
-        return "\n O Video : " + titulo + "\n tem " + views +" views\n " + curtidas + " curtidas \n " +  avaliacao + " avaliações \n " +
+        return "\n O Video : " + titulo + "\n tem " + views +" views\n " + curtidas + " curtidas \n " +  "Tem nota : " + avaliacao + "\n " +
                 " esta reproduzindo ? > " + reproduzindo;
     }
 
