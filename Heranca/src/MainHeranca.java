@@ -11,9 +11,11 @@ public class MainHeranca {
         pessoas.add(new Pessoa("angelo","masc",26));
         //Recuperando um objeto atravez do endereço
         Pessoa a = pessoas.get(0);
+        System.out.println(a.getNome());
         //Removendo um objeto da lista atraves do objeto criado no get, ou usando o endereço
         pessoas.remove(a);
-        pessoas.remove(0);
+        //pessoas.remove(0);
+
 
 
 
