@@ -1,9 +1,26 @@
+import java.util.Objects;
+
 public class Pessoa {
 
     //Atributos
 
     private String nome,sexo;
     private int idade;
+
+    //Identificadores em List
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Pessoa pessoa = (Pessoa) o;
+        return idade == pessoa.idade && Objects.equals(nome, pessoa.nome) && Objects.equals(sexo, pessoa.sexo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, sexo, idade);
+    }
+
 
     // Métodos
 
